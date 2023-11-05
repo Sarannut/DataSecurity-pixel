@@ -31,6 +31,7 @@
   },
   "scripts": {
      "predeploy": "npm run build"
-  
+      "start": "node server.js",
+      "build": "your-build-command"
 }
 }
