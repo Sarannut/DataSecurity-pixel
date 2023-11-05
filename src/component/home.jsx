@@ -19,6 +19,13 @@ function Home() {
     setImages("");
   };
 
+  const handleInputChange = (e) => {
+    const value = e.target.value;
+    // ใช้ toUpperCase() เพื่อแปลงข้อความให้เป็นตัวพิมใหญ่
+    setInputValue(value.toUpperCase());
+  };
+
+
   const copyImage = () => {
     const img = new Image();
     img.src = `data:image/png;base64, ${images.encrypted_image}`;
@@ -51,10 +58,11 @@ function Home() {
 
   const validateKeyInput = (e) => {
     const keyInput = e.target.value;
-
-    // ตรวจสอบว่า key มีเฉพาะตัวอักษรและตัวเลขเท่านั้น
+    if (keyInput === "") {
+      return; // ไม่ต้องแจ้งเตือนเมื่อค่าว่าง
+    }
     if (/^[a-zA-Z]+$/.test(keyInput)) {
-      // สามารถใส่ตัวอักษรและตัวเลข
+
     } else {
       alert("กรุณาใส่คีย์ที่มีตัวอักษรภาษาอังกฤษเท่านั้น");
       e.target.value = "";
@@ -80,7 +88,7 @@ function Home() {
       formData.append("image", file);
 
       const keyInput = document.querySelector(".vuluekey1");
-      const key = keyInput.value;
+      const key = keyInput.value.toUpperCase();
 
       // ตรวจสอบว่า key มีเฉพาะตัวอักษร
       if (/^[a-zA-Z]+$/.test(key) && key.length > 0) {
@@ -223,7 +231,7 @@ function Home() {
             <img
               src={imgSrc}
               alt="Selected Image"
-              style={{ width: "350px", height: "350px", borderRadius: "50%" }}
+              style={{ width: "50%", height: "90%", borderRadius: "50%" }}
             />
           ) : (
             <i
@@ -249,9 +257,9 @@ function Home() {
               className="vuluekey1"
               type="text"
               onInput={validateKeyInput}
-              pattern="[A-Za-z]+"
+              pattern="[a-zA-Z]+"
               value={inputValue}
-              onChange={(e) => setInputValue(e.target.value)}
+              onChange={handleInputChange}
             />
           </div>
           <div className="submidkey">
@@ -289,14 +297,14 @@ function Home() {
               <img
                 src={`data:image/png;base64, ${images.encrypted_image}`}
                 alt="Encrypted"
-                style={{ width: "350px", height: "350px", borderRadius: "50%" }}
+                style={{ width: "50%", height: "90%", borderRadius: "50%" }}
               />
             ) : (
               // ถ้าคลิก Decrypt
               <img
                 src={`data:image/png;base64, ${images.encrypted_image}`}
                 alt="Decrypted"
-                style={{ width: "350px", height: "350px", borderRadius: "50%" }}
+                style={{ width: "50%", height: "90%", borderRadius: "50%" }}
               />
             ))}
         </div>
