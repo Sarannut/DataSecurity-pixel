@@ -1,0 +1,66 @@
+
+.header-menu {
+    margin: 0px;
+    top: 0px;
+    display: flex;
+    justify-content: space-between; /* แบ่ง Header เป็นสองส่วน: ซ้ายและขวา */
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    background-color: #E7EAF0;
+    height: 10vh;
+    border-radius: 5px; 
+    width: 99.99vw;
+    font-size: 25px;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #BFC8D7;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover,
+  nav a:active {
+    color: #000;
+  }
+  nav a.active{
+    color: #000;
+  }
+  .link-to-member {
+    margin-right: 10%;
+  }
+  .active::after {
+    content: ''; /* เพิ่มเนื้อหาด้วยว่างเปล่า */
+    display: block; /* ตั้งให้เป็นบล็อกเพื่อให้สามารถกำหนดความกว้างและสูงได้ */
+    width: 10px; /* กำหนดความกว้างของจุดกลม */
+    height: 10px; /* กำหนดความสูงของจุดกลม */
+    background-color: black; /* กำหนดสีของจุดกลม */
+    border-radius: 50%; /* กำหนดให้เป็นวงกลม */
+    position: absolute; /* ตั้งโพสิชันเป็น absolute เพื่อสร้างการตกแต่งบนข้อความ */
+    top: 120%; /* ตั้งให้อยู่ที่ด้านล่างของข้อความ */
+    left: 50%; /* ตั้งค่าระยะจากด้านซ้ายไปครึ่งหนึ่งของข้อความ */
+    transform: translateX(-50%); /* จัดให้จุดกลมอยู่ตรงกลางของข้อความ */
+  }
+  .active {
+    color: black;
+    text-decoration: none; /* ลบขีดเส้นใต้ */
+    position: relative; /* ตั้งโพสิชันเป็น relative เพื่อให้สามารถตั้งพิกัลในข้อความ */
+  }
+  

@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    list-style: none;
+  }
+
+  .block {
+    width: 40%;
+    height: 70vh;
+    margin-top: 70px;
+    margin-left: 40px;
+    border: 5px solid #A2B59F;
+    border-radius: 20px; 
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .block1 {
+    width: 40%;
+    height: 70vh;
+    margin-top: 70px;
+    margin-left: 40px;
+    border: 5px solid #A2B59F;
+    border-radius: 20px; 
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #E7EAF0;
+
+  }
+   .title{
+    width: 100%;
+    height: 10%;
+    border-radius: 30px; 
+    font-size: 38px;
+   }
+   .button22{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    border-radius: 30px; 
+    font-size: 30px;
+   }
+
+   .button{
+    width: 100%;
+    height: 9%;
+    border-radius: 30px; 
+    font-size: 30px;
+   }
+   .button-en{
+    width: 50%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: #E2D2D2;
+    color: #fff;
+    border: none;
+    box-shadow: none;
+    align-items: center; /* จัดเรียงข้อความในกลางตรงกลาง */
+  justify-content: center; /* จัดเรียงข้อความในกลางตรงกลาง */
+   }
+   .button-de{
+    width: 50%;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #E2D2D2;
+    color: #fff;
+    align-items: center; /* จัดเรียงข้อความในกลางตรงกลาง */
+  justify-content: center; /* จัดเรียงข้อความในกลางตรงกลาง */
+   }
+   .button-en input[type="radio"] {
+    transform: scale(1.5); /* ปรับขนาดปุ่ม radio ใหญ่ขึ้นโดยใช้การขยาย */
+    margin-left: 10%;
+    margin-right: 5%;
+  }
+  .button-de input[type="radio"] {
+    transform: scale(1.5); /* ปรับขนาดปุ่ม radio ใหญ่ขึ้นโดยใช้การขยาย */
+    margin-left: 10%;
+    margin-right: 5%;
+  }
+  
+
+   .button-en:hover{
+    background-color: #BFC8D7;
+    color: #000;
+  }
+  .button-de:hover{
+    background-color: #BFC8D7;
+    color: #000;
+  }
+
+  .button-en:active,
+  .button-en:focus {
+    background-color: #BFC8D7; /* สีเมื่อถูกคลิก */
+    color: #000; /* สีของตัวหนังสือเมื่อถูกคลิก */
+    border: none;
+    box-shadow: none;
+    outline: none;
+  }
+  
+  .button-de:active,
+  .button-de:focus {
+    background-color: #BFC8D7; /* สีเมื่อถูกคลิก */
+    color: #000; /* สีของตัวหนังสือเมื่อถูกคลิก */
+    border: none;
+    box-shadow: none;
+    outline: none;
+  }
+  .blockim{
+    margin-top: 5%;
+    background-color: #BFC8D7;
+    width: 100%;
+    height:65%;
+    border-radius: 30px; 
+    
+  }
+  .blockim:active,
+  .blockim:focus{
+    outline: none;
+  }
+
+  .button-im{
+    background-color: #fff;
+    color: #E2D2D2;
+    border-radius: 20px;
+    margin-right: 5%;
+    border: 2px solid #A2B59F;
+  }
+  .button-im:active,
+  .button-im:hover {
+    background-color: #E2D2D2; /* สีเมื่อถูกคลิก */
+    color: #fff; /* สีของตัวหนังสือเมื่อถูกคลิก */
+    border: none;
+    box-shadow: none;
+    outline: none;
+  }
+  .button-im:focus{
+    outline: none;
+  }
+  .button-im2{
+    background-color: #fff;
+    color: #E2D2D2;
+  }
+  .button-im2:active,
+  .button-im2:hover {
+    background-color: #E2D2D2; /* สีเมื่อถูกคลิก */
+    color: #fff; /* สีของตัวหนังสือเมื่อถูกคลิก */
+    border: none;
+    box-shadow: none;
+    outline: none;
+  }
+  .button-im2:focus{
+    outline: none;
+  }
+
+  .showim{
+    margin-top: 5%;
+    background-color: #BFC8D7;
+    width: 100%;
+    height:65%;
+    border-radius: 30px; 
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .line{
+    width: 100%;
+    height:0.5%;
+    background-color: #A2B59F;
+    margin-top: 5%;
+    border-radius: 30px;
+  }
+
+  .key{
+    width: 100%;
+    height: 11%;
+    margin-top: 3%;
+    background-color: #E7EAF0;
+    border-radius: 30px; 
+    display: flex;
+  }
+  .namekey{
+    width: 13%;
+    height: 100%;
+    background-color: #BFC8D7;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    display: flex;
+    align-items: center;
+  }
+  .namekey1{
+    font-size: 25px;
+    padding-left: 20%;
+  }
+  .vuluekey{
+    width: 70%;
+    height: 100%;
+    background-color: #E7EAF0;
+  }
+  .vuluekey1{
+    width: 100%;
+    height: 100%;
+    background-color: #E7EAF0;
+    font-size: 25px;
+  }
+  .submidkey{
+    width: 17%;
+    height: 100%;
+    background-color: #BFC8D7;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    align-items: center;
+  }
+  .submidkey1{
+    width: 100%;
+    height: 90%;
+    background-color: #BFC8D7;
+    font-size: 25px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-weight: 400;
+  }
+  .submidkey1:focus{
+    outline: none;
+  }
+  .submidkey1:active,
+  .submidkey1:hover {
+    background-color: #E2D2D2; /* สีเมื่อถูกคลิก */
+    color: #000; /* สีของตัวหนังสือเมื่อถูกคลิก */
+    border: none;
+    box-shadow: none;
+    outline: none;
+  }
+  .namekey-1{
+    width: 13%;
+    height: 100%;
+    background-color: #E2D2D2;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    display: flex;
+    align-items: center;
+  }
+  .namekey1-1{
+    font-size: 25px;
+    padding-left: 20%;
+  }
+  .vuluekey-1{
+    width: 70%;
+    height: 100%;
+    background-color: #fff;
+  }
+  .vuluekey1-1{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    font-size: 25px;
+  }
+  .submidkey-1{
+    width: 17%;
+    height: 100%;
+    background-color: #E2D2D2;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    align-items: center;
+  }
+  .submidkey1-1{
+    width: 100%;
+    height: 90%;
+    background-color: #E2D2D2;
+    font-size: 25px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-weight: 400;
+  }
+  .submidkey1-1:focus{
+    outline: none;
+  }
+  .submidkey1-1:active,
+  .submidkey1-1:hover {
+    background-color: #BFC8D7; /* สีเมื่อถูกคลิก */
+    color: #000; /* สีของตัวหนังสือเมื่อถูกคลิก */
+    border: none;
+    box-shadow: none;
+    outline: none;
+  }
+  .scrollable-text {
+    overflow: auto;    /* สร้าง scrollbar เมื่อเกินขนาด */
+    white-space: nowrap;  /* ไม่ให้ข้อความขึ้นบรรทัดใหม่ */
+    max-width: 100%;     /* รักษาขนาดเท่ากับ parent container */
+  }
+  
+  
+  

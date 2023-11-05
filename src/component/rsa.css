@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+
+
+.containerrsa{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    list-style: none;
+  }
+
+  .blockrsa {
+    width: 28%;
+    height: 550px;
+    margin-top: 70px;
+    margin-left: 40px;
+    border: 5px solid #A2B59F;
+    border-radius: 15px; 
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+   .titlersa{
+    width: 100%;
+    height: 10%;
+    border-radius: 30px; 
+   }
+
+   .subrsa{
+    width: 100px;
+    height: 10%;
+    border-radius: 30px; 
+   }
+   .custom-backgrounden {
+    background: linear-gradient(to right, #BFC8D7 20%, #E7EAF0 20%);
+  }
+  .custom-backgrounden input {
+    background-color: #E7EAF0;
+    height: 90%;
+    width: 70%;
+    border: none; 
+  }
+  .custom-backgroundde {
+    background: linear-gradient(to right, #E2D2D2 20%, #F2EEEE 20%);
+  }
+  .custom-backgroundde input {
+    background-color: #F2EEEE;
+    height: 90%;
+    width: 70%;
+    border: none; 
+  }
+  .submitrsa {
+    border-radius: 40px;
+    border: none;
+}
+.linelong{
+  border-bottom: 3px solid #A2B59F;
+  height: 20px;
+       
+}
+.custom-backgroundennn {
+  background: linear-gradient(to bottom, #BFC8D7 50%, #FFFFFF 50%);
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+}
+
+
+  
