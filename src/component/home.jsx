@@ -56,7 +56,7 @@ function Home() {
     if (/^[a-zA-Z]+$/.test(keyInput)) {
       // สามารถใส่ตัวอักษรและตัวเลข
     } else {
-      alert("กรุณาใส่คีย์ที่มีตัวอักษรเท่านั้น");
+      alert("กรุณาใส่คีย์ที่มีตัวอักษรภาษาอังกฤษเท่านั้น");
       e.target.value = "";
     }
   };
@@ -101,7 +101,7 @@ function Home() {
             }
           });
       } else {
-        alert("กรุณาใส่คีย์ที่มีตัวอักษรเท่านั้น และไม่เป็นค่าว่าง");
+        alert("กรุณาใส่คีย์ที่มีตัวอักษรภาษาอังกฤษเท่านั้น และไม่เป็นค่าว่าง");
       }
     }
   };
@@ -305,7 +305,7 @@ function Home() {
         {selectedOption === "encrypt" && (
           <div className="key">
             <div className="namekey-1">
-              <p className="namekey1-1">Key:</p>
+              <p className="namekey1-1">Key(RSA):</p>
             </div>
             <div className="vuluekey-1">
               <div className="scrollable-text">
