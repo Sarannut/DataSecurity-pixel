@@ -34,12 +34,6 @@ def process_image():
 
         key = hashlib.sha256(key_bytes).digest()
 
-        key = key.ljust(image_height * image_width, b'\x00')
-
-        while len(key) < image_height * image_width:
-            key += hashlib.sha256(key).digest()
-
-        key = key[:image_height * image_width]
         original_key = key
         reduced_key = []
 

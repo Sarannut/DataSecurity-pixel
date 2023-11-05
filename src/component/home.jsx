@@ -8,9 +8,15 @@ function Home() {
   const [images, setImages] = useState({});
   const [uploadedImage, setUploadedImage] = useState(false);
   const [keydecrypt, setKeydecrypt] = useState("");
+  const [inputValue, setInputValue] = useState(""); 
 
   const handleOptionChange = (e) => {
     setSelectedOption(e.target.value);
+    setImgSrc("");
+    setFile(null);
+    setKeydecrypt("");
+    setInputValue("");
+    setImages("");
   };
 
   const copyImage = () => {
@@ -34,15 +40,14 @@ function Home() {
 
   const handleCopy = () => {
     const textToCopy = keydecrypt;
-    const textArea = document.createElement('textarea');
+    const textArea = document.createElement("textarea");
     textArea.value = textToCopy;
     document.body.appendChild(textArea);
     textArea.select();
-    document.execCommand('copy');
+    document.execCommand("copy");
     document.body.removeChild(textArea);
     alert("คีย์ถูกคัดลอกไปยังคลิปบอร์ดแล้ว");
   };
-  
 
   const validateKeyInput = (e) => {
     const keyInput = e.target.value;
@@ -52,7 +57,7 @@ function Home() {
       // สามารถใส่ตัวอักษรและตัวเลข
     } else {
       alert("กรุณาใส่คีย์ที่มีตัวอักษรเท่านั้น");
-      e.target.value = ""; 
+      e.target.value = "";
     }
   };
 
@@ -245,6 +250,8 @@ function Home() {
               type="text"
               onInput={validateKeyInput}
               pattern="[A-Za-z]+"
+              value={inputValue}
+              onChange={(e) => setInputValue(e.target.value)}
             />
           </div>
           <div className="submidkey">
@@ -295,23 +302,25 @@ function Home() {
         </div>
 
         <div className="line"></div>
-        <div className="key">
-          <div className="namekey-1">
-            <p className="namekey1-1">Key:</p>
-          </div>
-          <div className="vuluekey-1">
-            <div className="scrollable-text">
-              <p className="vuluekey1-1">{keydecrypt}</p>
+        {selectedOption === "encrypt" && (
+          <div className="key">
+            <div className="namekey-1">
+              <p className="namekey1-1">Key:</p>
+            </div>
+            <div className="vuluekey-1">
+              <div className="scrollable-text">
+                <p className="vuluekey1-1">{keydecrypt}</p>
+              </div>
+            </div>
+            <div className="submidkey-1">
+              <button className="submidkey1-1" onClick={handleCopy}>
+                <i className="material-icons" style={{ fontSize: "30px" }}>
+                  content_copy
+                </i>
+              </button>
             </div>
           </div>
-          <div className="submidkey-1">
-            <button className="submidkey1-1" onClick={handleCopy}>
-              <i className="material-icons" style={{ fontSize: "30px" }}>
-                content_copy
-              </i>
-            </button>
-          </div>
-        </div>
+        )}
       </div>
     </div>
   );
